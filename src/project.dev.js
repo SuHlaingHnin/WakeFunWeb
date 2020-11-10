@@ -10908,7 +10908,8 @@ window.__require = function e(t, n, r) {
         var dd = this.currentDay.toString().padStart(2, "0");
         var mm = this.monthCounter.toString().padStart(2, "0");
         var yyyy = this.yearCounter;
-        today = dd + "/" + mm + "/" + yyyy;
+        var today = dd + "/" + mm + "/" + yyyy;
+        console.log("getClickedDate : " + today);
         return today;
       },
       assignToUIManager: function assignToUIManager(date) {
